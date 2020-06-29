@@ -25,7 +25,7 @@ To enhance the noisy speech, DL-based mapping technique is used. Particulary, Ge
 python3 training.py -sm .../path/to/save/model -trn .../path/of/training/data
 ```
 
-3. For testing, give according path and run the following command in terminal:
+4. For testing, give according path and run the following command in terminal:
 ```sh
 python3 training.py -sm .../path/of/saved/model -tst .../path/of/testing/data -pfp .../path/to/save/predicted/features
 ```
@@ -33,7 +33,7 @@ python3 training.py -sm .../path/of/saved/model -tst .../path/of/testing/data -p
 ## Resynthesis
 To resynthesize the wave file from predicted features, Inverse Gammatone filterbank is applied<sup>1</sup>.
 
-To synthesize file, give according path and run the following script - synthesized_enhanced_file.m
+5. To synthesize file, give according path and run the following script - synthesized_enhanced_file.m
 
 
 
