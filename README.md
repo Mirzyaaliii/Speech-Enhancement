@@ -1,5 +1,5 @@
 # Speech-Enhancement
-Speech Enhancement - Remove the noise from audio files to produce more clear output
+Speech Enhancement - Remove the noise from audio files to produce more clear output.
 
 This is a implementation of speech enhancemnet project using signal-processing concepts and Deep Learning (DL)-based mapping technique. The implementation done using [Pytorch](https://pytorch.org/) open-source library and publicly available dataset.
 
@@ -33,7 +33,7 @@ python3 training.py -sm .../path/of/saved/model -tst .../path/of/testing/data -p
 ## Resynthesis
 To resynthesize the wave file from predicted features, Inverse Gammatone filterbank is applied<sup>1</sup>.
 
-5. To synthesize file, give according path and run the following script - synthesized_enhanced_file.m
+5. To synthesize file, give according path and run the following script - synthesize_enhanced_file.m
 
 
 
