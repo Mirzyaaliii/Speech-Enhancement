@@ -5,7 +5,7 @@ This is a implementation of speech enhancemnet project using signal-processing c
 
 
 ## Algorithm
-In this project, Time-Frequency (T-F) masking-based approach is used<sup>1</sup>, which works on supervised-learning. In its simplest form, supervised model estimates an ideal T-F mask of a noisy mixture using a trained classifier, typically, any DL-based architecture, e.g, DNN, CNN. An ideal T-F mask indicates whether, or to what extent, each T-F unit is dominated by target speech/
+In this project, Time-Frequency (T-F) masking-based approach is used<sup>1</sup>, which works on supervised-learning. In its simplest form, supervised model estimates an ideal T-F mask of a noisy mixture using a trained classifier, typically, any DL-based architecture, e.g, DNN, CNN. An ideal T-F mask indicates whether, or to what extent, each T-F unit is dominated by target speech.
 
 
 ## Dataset
