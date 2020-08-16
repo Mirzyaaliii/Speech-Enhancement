@@ -14,8 +14,9 @@ Dataset used in this project, namely, **SUPERSEDED**, which is Publicly availabl
 Link of the dataset - [https://datashare.is.ed.ac.uk/handle/10283/1942](https://datashare.is.ed.ac.uk/handle/10283/1942)
 
 
+## Implementation
 For implementation, follow the following 5 steps:
-## Feature Extraction
+### Feature Extraction
 All the experiments are done on 8k sampling frequency. As given dataset is originally in 16k, first, all the files are down-sampled to 8k. To down sample the file [SoX](http://sox.sourceforge.net/)-player is used.
 
 1. To downsample the data, give according path and run the following script - downsampled.sh
@@ -25,7 +26,7 @@ In this project, **Gammatone FilterBank** feature are used<sup>3</sup>. In featu
 2. To extract the features, give according path and run the following scripts - feature_extraction_training.m & feature_extraction_testing.m
 
 
-## Mapping Technique
+### Mapping Technique
 To enhance the noisy speech, DL-based mapping technique is used. Particulary, Generative Adversarial Network (GAN)<sup>4</sup> is used to map the noisy speech to the clean speech. Here, one extra loss added as regularization in the implemenation of GAN, which tries to minimize the distance betwwen the predicted and target spectrum. Mean Square Error (MSE) loss is used to satisty this condition. 
 
 3. For training, give according path and run the following command in terminal:
@@ -39,7 +40,7 @@ python3 training.py -sm .../path/of/saved/model -tst .../path/of/testing/data -p
 ```
 
 
-## Resynthesis
+### Resynthesis
 To resynthesize the wave file from predicted features, Inverse Gammatone filterbank is applied<sup>2</sup>.
 
 5. To synthesize file, give according path and run the following script - synthesize_enhanced_file.m
