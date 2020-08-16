@@ -36,7 +36,7 @@ python3 training.py -sm .../path/to/save/model -trn .../path/of/training/data
 
 4. For testing, give according path and run the following command in terminal:
 ```sh
-python3 training.py -sm .../path/of/saved/model -tst .../path/of/testing/data -pfp .../path/to/save/predicted/features
+python3 testing.py -sm .../path/of/saved/model -tst .../path/of/testing/data -pfp .../path/to/save/predicted/features
 ```
 
 
